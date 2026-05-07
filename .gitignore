@@ -40,9 +40,9 @@ Modul-05-Domaenen-Automatisierung/Loesungen/
 # Teilnehmer sehen nur die Stubs in 'Beispiele/'.
 # =============================================================
 
-Modul-01-AD-Basisobjekte/Demo/
-Modul-02-AD-Konfiguration/Demo/
-Modul-03-Kontoverwaltung/Demo/
+#Modul-01-AD-Basisobjekte/Demo/
+#Modul-02-AD-Konfiguration/Demo/
+#Modul-03-Kontoverwaltung/Demo/
 Modul-04-Betriebsmasterrollen/Demo/
 Modul-05-Domaenen-Automatisierung/Demo/
 
