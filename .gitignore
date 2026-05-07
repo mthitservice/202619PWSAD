@@ -1,1 +1,44 @@
+# Alte/lokale Beschreibung
 lab-discription.md
+
+# Trainer-interne Dokumentation (komplette Projektbeschreibung)
+README-intern.md
+
+# Lab-Setup – nur für den Trainer (wird nicht veröffentlicht)
+Lab-Setup/
+
+# =============================================================
+# Trainer-Lösungen
+# -------------------------------------------------------------
+# Standardmäßig werden ALLE Modul-Lösungen NICHT versioniert.
+# Zum Freigeben einer Lösung: Zeile mit "#" auskommentieren,
+# committen, pushen. So kann Modul für Modul nachgereicht werden.
+# =============================================================
+
+Lab-Setup/Loesungen/
+Modul-01-AD-Basisobjekte/Loesungen/
+Modul-02-AD-Konfiguration/Loesungen/
+Modul-03-Kontoverwaltung/Loesungen/
+Modul-04-Betriebsmasterrollen/Loesungen/
+Modul-05-Domaenen-Automatisierung/Loesungen/
+
+# =============================================================
+# PowerShell / Windows Standard
+# =============================================================
+*.ps1xml.bak
+*.log
+*.tmp
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Editor / IDE
+.vscode/
+.vs/
+*.suo
+*.user
+
+# Secrets
+*.pfx
+*.key
+secrets.*.ps1

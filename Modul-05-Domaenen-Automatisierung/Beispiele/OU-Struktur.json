@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "ITH-Org",
+    "Description": "Wurzel für alle ITH-01 Objekte",
+    "Children": [
+      {
+        "Name": "Standorte",
+        "Children": [
+          { "Name": "Dresden",  "Children": [
+            { "Name": "Benutzer" },
+            { "Name": "Computer" },
+            { "Name": "Gruppen" }
+          ]},
+          { "Name": "Leipzig",  "Children": [
+            { "Name": "Benutzer" },
+            { "Name": "Computer" },
+            { "Name": "Gruppen" }
+          ]}
+        ]
+      },
+      {
+        "Name": "Services",
+        "Children": [
+          { "Name": "ServiceAccounts" },
+          { "Name": "ServerGruppen" }
+        ]
+      }
+    ]
+  }
+]
