@@ -1,24 +1,34 @@
 <#
 .SYNOPSIS
-    Übungs-Stub: Benutzer mit allen wichtigen Eigenschaften anlegen.
+    Trainer-Demo: Einen Benutzer mit allen wichtigen Eigenschaften anlegen.
 
 .DESCRIPTION
-    Wird in der Live-Demo gemeinsam erarbeitet.
-    Ziel: einen Demo-User in OU=Benutzer,OU=PWSAD,... anlegen und die
-    wichtigsten Properties (Sam, UPN, DisplayName, Department, Title,
-    Office) korrekt setzen.
-
-    Hinweise:
-    - Splatting verwenden ($params = @{ ... })
-    - Passwort mit ConvertTo-SecureString -AsPlainText -Force
-    - Initialpasswort:  Pa55w.rd2619
-    - ChangePasswordAtLogon = $true
+    Zeigt die wichtigsten Parameter von New-ADUser und den Unterschied
+    zwischen SamAccountName, UPN und DisplayName.
 #>
 
 Import-Module ActiveDirectory
 
-# TODO: OU-Pfad bestimmen
-# TODO: SecureString für das Initialpasswort erzeugen
-# TODO: Hashtable mit New-ADUser-Parametern (Splatting) befüllen
-# TODO: New-ADUser @params
-# TODO: Ergebnis mit Get-ADUser -Properties prüfen
+$ouUsers = "OU=Benutzer,OU=PWSAD,$((Get-ADDomain).DistinguishedName)"
+$pwd     = ConvertTo-SecureString 'Pa55w.rd2619' -AsPlainText -Force
+
+$params = @{
+    Name              = 'Max Mustermann'
+    GivenName         = 'Max'
+    Surname           = 'Mustermann'
+    SamAccountName    = 'm.mustermann'
+    UserPrincipalName = 'm.mustermann@ITH-01.local'
+    DisplayName       = 'Mustermann, Max'
+    Path              = $ouUsers
+    AccountPassword   = $pwd
+    Enabled           = $true
+    ChangePasswordAtLogon = $true
+    Department        = 'IT'
+    Title             = 'Administrator'
+    Office            = 'Dresden'
+}
+
+New-ADUser @params
+
+Get-ADUser -Identity 'm.mustermann' -Properties Department,Title,Office |
+    Format-List Name, SamAccountName, UserPrincipalName, Department, Title, Office, Enabled

@@ -1,15 +1,20 @@
 <#
 .SYNOPSIS
-    Übungs-Stub: Computer-Konto vorab im AD anlegen ("pre-stage").
+    Trainer-Demo: Computer-Konto vorab im AD anlegen ("pre-stage").
 
 .DESCRIPTION
-    Wird in der Live-Demo gemeinsam erarbeitet.
-    Ziel: Computer-Objekt in OU=Computer,OU=PWSAD anlegen, damit beim
-    Domänenbeitritt die richtigen GPOs sofort greifen.
+    Pre-staging legt das Computerkonto in der gewünschten OU an, BEVOR
+    das System der Domäne beitritt. So greifen die richtigen GPOs sofort.
 #>
 
 Import-Module ActiveDirectory
 
-# TODO: OU-Pfad bestimmen
-# TODO: New-ADComputer mit -SamAccountName 'NAME$'
-# TODO: Get-ADComputer -Properties Description, OperatingSystem
+$ouComputers = "OU=Computer,OU=PWSAD,$((Get-ADDomain).DistinguishedName)"
+
+New-ADComputer -Name 'MEM01' -SamAccountName 'MEM01$' `
+    -Path $ouComputers `
+    -Enabled $true `
+    -Description 'Übungs-Member-Server'
+
+Get-ADComputer -Identity 'MEM01' -Properties Description, OperatingSystem |
+    Format-List Name, DistinguishedName, Description, OperatingSystem, Enabled
