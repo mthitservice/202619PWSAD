@@ -1,5 +1,6 @@
 # Alte/lokale Beschreibung
 lab-discription.md
+lab-description.md
 
 # Trainer-interne Dokumentation (komplette Projektbeschreibung)
 README-intern.md
@@ -8,14 +9,25 @@ README-intern.md
 Lab-Setup/
 
 # =============================================================
-# Trainer-Lösungen
+# Module – modulweise freigeben
 # -------------------------------------------------------------
-# Standardmäßig werden ALLE Modul-Lösungen NICHT versioniert.
-# Zum Freigeben einer Lösung: Zeile mit "#" auskommentieren,
-# committen, pushen. So kann Modul für Modul nachgereicht werden.
+# Modul wird gerade unterrichtet -> Zeile auskommentieren (#).
+# Aktuell freigegeben: Modul 01.
 # =============================================================
 
-Lab-Setup/Loesungen/
+#Modul-01-AD-Basisobjekte/
+Modul-02-AD-Konfiguration/
+Modul-03-Kontoverwaltung/
+Modul-04-Betriebsmasterrollen/
+Modul-05-Domaenen-Automatisierung/
+
+# =============================================================
+# Trainer-Lösungen
+# -------------------------------------------------------------
+# Lösungen sind grundsätzlich NICHT versioniert.
+# Zum Freigeben (z. B. nach dem Kurs): Zeile auskommentieren.
+# =============================================================
+
 Modul-01-AD-Basisobjekte/Loesungen/
 Modul-02-AD-Konfiguration/Loesungen/
 Modul-03-Kontoverwaltung/Loesungen/
