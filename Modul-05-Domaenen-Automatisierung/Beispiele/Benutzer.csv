@@ -1,5 +1,0 @@
-SamAccountName;GivenName;Surname;Department;Title;Office;OU;Group
-e.eberhardt;Eva;Eberhardt;IT;Systemadmin;Dresden;OU=Benutzer,OU=Dresden,OU=Standorte,OU=ITH-Org,DC=ITH-01,DC=local;G-IT
-f.fischer;Frank;Fischer;Vertrieb;Account Manager;Dresden;OU=Benutzer,OU=Dresden,OU=Standorte,OU=ITH-Org,DC=ITH-01,DC=local;G-Vertrieb
-g.gross;Greta;Groß;Buchhaltung;Buchhalter;Leipzig;OU=Benutzer,OU=Leipzig,OU=Standorte,OU=ITH-Org,DC=ITH-01,DC=local;G-Buchhaltung
-h.hoffmann;Hans;Hoffmann;Produktion;Meister;Leipzig;OU=Benutzer,OU=Leipzig,OU=Standorte,OU=ITH-Org,DC=ITH-01,DC=local;G-Produktion
