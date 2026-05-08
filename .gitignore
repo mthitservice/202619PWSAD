@@ -18,8 +18,9 @@ Lab-Setup/
 #Modul-01-AD-Basisobjekte/
 #Modul-02-AD-Konfiguration/
 #Modul-03-Kontoverwaltung/
-Modul-04-Betriebsmasterrollen/
+#Modul-04-Betriebsmasterrollen/
 Modul-05-Domaenen-Automatisierung/
+#Modul-06-AD-Gruppen-Audit/
 
 # =============================================================
 # Trainer-Lösungen
@@ -33,6 +34,7 @@ Modul-02-AD-Konfiguration/Loesungen/
 Modul-03-Kontoverwaltung/Loesungen/
 Modul-04-Betriebsmasterrollen/Loesungen/
 Modul-05-Domaenen-Automatisierung/Loesungen/
+Modul-06-AD-Gruppen-Audit/Loesungen/
 
 # =============================================================
 # Trainer-Demos (vollständige Skripte zum Vorführen)
@@ -45,6 +47,7 @@ Modul-05-Domaenen-Automatisierung/Loesungen/
 #Modul-03-Kontoverwaltung/Demo/
 Modul-04-Betriebsmasterrollen/Demo/
 Modul-05-Domaenen-Automatisierung/Demo/
+Modul-06-AD-Gruppen-Audit/Demo/
 
 # =============================================================
 # PowerShell / Windows Standard
