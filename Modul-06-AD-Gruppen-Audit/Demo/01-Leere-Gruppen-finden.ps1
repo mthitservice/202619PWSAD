@@ -20,7 +20,7 @@ Import-Module ActiveDirectory
 
 $groups = Get-ADGroup -Filter "GroupCategory -eq 'Security'" `
     -Properties Members, whenCreated, Description |
-    Where-Object { $_.DistinguishedName -notmatch [regex]::Escape($ExcludeOU) } {}
+    Where-Object { $_.DistinguishedName -notmatch [regex]::Escape($ExcludeOU) } 
 
 $result = foreach ($g in $groups) {
     $directCount = @($g.Members).Count
@@ -34,7 +34,7 @@ $result = foreach ($g in $groups) {
     if ($effectiveCount -eq 0) {
         [PSCustomObject]@{
             Name              = $g.Name
-            GroupScope        = $g.GroupScopewhe yello$
+            GroupScope        = $g.GroupScope
             DirectMembers     = $directCount
             RecursiveMembers  = $effectiveCount
             WhenCreated       = $g.whenCreated
