@@ -20,7 +20,7 @@ Lab-Setup/
 #Modul-03-Kontoverwaltung/
 #Modul-04-Betriebsmasterrollen/
 #Modul-05-Domaenen-Automatisierung/
-Modul-06-AD-Gruppen-Audit/
+#Modul-06-AD-Gruppen-Audit/
 #Modul-07-JEA/
 
 # =============================================================
@@ -46,9 +46,9 @@ Modul-06-AD-Gruppen-Audit/Loesungen/
 #Modul-01-AD-Basisobjekte/Demo/
 #Modul-02-AD-Konfiguration/Demo/
 #Modul-03-Kontoverwaltung/Demo/
-Modul-04-Betriebsmasterrollen/Demo/
-Modul-05-Domaenen-Automatisierung/Demo/
-Modul-06-AD-Gruppen-Audit/Demo/
+#Modul-04-Betriebsmasterrollen/Demo/
+#Modul-05-Domaenen-Automatisierung/Demo/
+#Modul-06-AD-Gruppen-Audit/Demo/
 
 # =============================================================
 # PowerShell / Windows Standard
